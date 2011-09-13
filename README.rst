@@ -2,7 +2,7 @@
 html5video-helper - HTML5 Video encoding toolbox
 ================================================
 
-This script is a little helper for encoding Videos for 
+This script is a little helper for encoding videos targeted for html5 use. If you have encoding parameter suggestions for better video quality please let me know.
 
 **DISCLAIMER:** In the current state the script is a bit ugly as it was my first python script and it's some kind of hacked, anyhow it works perfectly for me. But I can't quarante that this script works for in all cases and that it doesn't damage everything.
 
