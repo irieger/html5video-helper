@@ -34,7 +34,7 @@ def prepare():
     for line in ffmpeg.stderr:
         if ": Video:" in line:
             line = re.sub("^.+Video", "", line)
-            resol_re = re.compile('([0-9]+)x([0-9]+)')
+            resol_re = re.compile('([0-9]{3,})x([0-9]{3,})')
             resol_match = re.search(resol_re, line)
             input_resolution = [int(resol_match.group(1)), int(resol_match.group(2))]
             outfile_name_base = re.sub(r'(\.[a-z0-9]+)$', r'', os.path.basename(abs_input_file))
