@@ -51,17 +51,17 @@ def enc1080p():
         if (input_resolution[0] >= 1920) and (input_resolution[1] >= 1080) and (input_resolution[0]/input_resolution[1] == 16/9):
             # webm
             ffmpeg_video_param = "-b 5632k"
-            ffmpeg_audio_param = "-ar 44100"
+            ffmpeg_audio_param = "-ab 192k"
             enc_webm(ffmpeg_video_param, ffmpeg_audio_param, [1920, 1080])
 
             # theora
             ffmpeg_video_param = "-vb 6144k"
-            ffmpeg_audio_param = "-ar 44100"
+            ffmpeg_audio_param = "-ab 192k"
             enc_theora(ffmpeg_video_param, ffmpeg_audio_param, [1920, 1080])
 
             # h264
             ffmpeg_video_param = "-b 5632k"
-            ffmpeg_audio_param = "-ar 44100"
+            ffmpeg_audio_param = "-ab 192k"
             enc_h264(ffmpeg_video_param, ffmpeg_audio_param, [1920, 1080])
 
 
